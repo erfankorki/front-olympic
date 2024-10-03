@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 20px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.question-container {
+  appearance: none;
+  background-color: #e4eaef;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+}
+
+.question-container[open] .answer {
+  animation: fadeIn 1s;
+}
+
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.answer {
+  background-color: #30353b;
+  color: #fff9f1;
+  border-radius: 5px;
+  padding: 8px;
+}
